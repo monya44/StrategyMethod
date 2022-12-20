@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyMethod
 {
-    public class RedConsoleWriter : IConsoleWriter
+    public class YellowConsoleWriter : IConsoleWriter
     {
         public void WriterText(string text)
         {
@@ -15,9 +15,9 @@ namespace StrategyMethod
                 throw new ArgumentNullException(nameof(text));
             }
 
-            Console.ForegroundColor= ConsoleColor.Red;
+            Console.ForegroundColor= ConsoleColor.Yellow;
 
-            Console.WriteLine($">>> RedConsoleWriter {text}");
+            Console.WriteLine($">>> YellowConsoleWriter {text}");
         }
     }
 }

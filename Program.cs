@@ -6,13 +6,14 @@ namespace StrategyMethod
     {
         static void Main(string[] args)
         {
-            var count = 25;
+            var count = 10;
 
             var delay = TimeSpan.FromSeconds(1);
 
             var writes = new IConsoleWriter[]
             {
                 new BlueConsoleWriter(),
+                new YellowConsoleWriter(),
                 new GreenConsoleWriter(),
                 new RedConsoleWriter()
             };

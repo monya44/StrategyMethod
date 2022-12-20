@@ -18,7 +18,7 @@ namespace StrategyMethod
 
             Console.ForegroundColor= ConsoleColor.Green;
 
-            Console.WriteLine(text);
+            Console.WriteLine($">>> GreenConsoleWriter {text}");
         } 
     }
 }
